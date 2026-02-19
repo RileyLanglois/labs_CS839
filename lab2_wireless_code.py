@@ -31,8 +31,8 @@ def analyze_sparsity(file_path):
     plt.ylabel('Count')
     plt.title(f'Pixel-Wise Dist - {os.path.basename(file_path)}')
     plt.grid(True, alpha = 0.3)
-    plt.savefig(f'{os.path.basename(file_path)}_pixelwise.png')
-    plt.show()
+    # plt.savefig(f'{os.path.basename(file_path)}_pixelwise.png')
+    # Above no longer needed since the files are being submitted in a Word doc
 
     # temporal sparsity
     frame_diffs = np.diff(second_fft, axis = 0)
@@ -45,8 +45,8 @@ def analyze_sparsity(file_path):
     plt.ylabel('Count')
     plt.title(f'Temporal Sparsity - {os.path.basename(file_path)}')
     plt.grid(True, alpha = 0.3)
-    plt.savefig(f'{os.path.basename(file_path)}_temporal.png')
-    plt.show()
+    # plt.savefig(f'{os.path.basename(file_path)}_temporal.png')
+    # Above no longer needed since the files are being submitted in a Word doc
 
     # calculate entropies for pixel
     hist1, bin_edges1 = np.histogram(magnitudes, bins = 100, density = True)

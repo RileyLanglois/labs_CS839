@@ -9,7 +9,11 @@ Run 'python lab2_wireless_code.py [inputfilename]' to run TASK1 and TASK2 on an 
 Make sure to replace 'inputfilename' with the path to the input pkl file to be read
 
 # Step 3
-After running, you should get two png files (for example:
+In reference to expected outputs, I commented out the saving and showing of the histograms since they're being 
+submitted another way already. I don't figure you need duplicates but if you'd like to test, it should be easy to 
+uncomment.
+
+After running, you should get two png files (for example):
                                             '113.pkl_pixelwise.png'
                                             '113.pkl_temporal.png'
                 and the compressed file (for example):
